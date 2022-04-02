@@ -8,10 +8,10 @@ import (
 
 func main() {
 	r := &router.Router{}
-	r.Route(http.MethodGet, "/", func(w http.ResponseWriter, r *http.Request) {
+	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Hello!"))
 	})
-	r.Route(http.MethodGet, "/ping", func(w http.ResponseWriter, r *http.Request) {
+	r.Get("/ping", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Pong!"))
 	})
 	http.ListenAndServe(":8000", r)
