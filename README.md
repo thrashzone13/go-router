@@ -1,2 +1,2 @@
 ## Go Router
-Yet another router written in GoLang in order to doing some practices!
+Yet another router written in GoLang for practical purposes
